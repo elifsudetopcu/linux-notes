@@ -1,0 +1,18 @@
+# grep Command
+
+`grep` is used to search for a specific word or pattern inside files.
+
+---
+
+## Basic Usage
+
+```bash
+grep "word" file.txt
+
+
+| Command | Meaning |
+|--------|---------|
+| `grep "text" file.txt` | search for text in a file |
+| `grep -i "text" file.txt` | ignore case (case-insensitive) |
+| `grep -n "text" file.txt` | show line numbers |
+| `grep "text" file1 file2` | search
