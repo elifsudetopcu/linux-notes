@@ -1,0 +1,43 @@
+# Listing Files (ls) - Linux
+
+The `ls` command is used to **list files and directories**.
+
+---
+
+## Basic Usage
+
+```bash
+ls
+
+
+| Command | Meaning |
+|--------|---------|
+| `ls` | list files and folders |
+| `ls -a` | show hidden files |
+| `ls -l` | long listing format |
+| `ls -la` | long format + hidden files |
+| `ls -lh` | human readable sizes |
+| `ls -lt` | sort by time |
+| `ls -lS` | sort by size |
+| `ls -F` | show file type symbols |
+
+
+# File Types in Linux (ls -l)
+
+In Linux, the **first character** of `ls -l` output shows the **file type**.
+
+Example:
+
+```bash
+-rwxr-xr--
+
+
+| Symbol | Meaning |
+|--------|---------|
+| `-` | regular file |
+| `d` | directory |
+| `l` | symbolic link |
+| `c` | character device file |
+| `b` | block device file |
+| `s` | socket |
+| `p` | named pipe (FIFO) |
