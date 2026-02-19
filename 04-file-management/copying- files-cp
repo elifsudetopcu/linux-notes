@@ -1,0 +1,11 @@
+# Copying Files (cp)
+
+The `cp` command is used to copy files and directories.
+
+---
+
+## Copy a File
+
+```bash
+cp file1.txt file2.txt
+Copies file1.txt and creates file2.txt.
