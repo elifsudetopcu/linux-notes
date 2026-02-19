@@ -1,0 +1,33 @@
+# Regular Expressions (Regex)
+
+Regular expressions have two common forms: **basic** and **extended**.
+
+Most commands that use regular expressions can interpret **basic regular expressions**.  
+However, **extended regular expressions** are not available for all commands and usually require a command option to work correctly (example: `egrep` or `grep -E`).
+
+---
+
+## Basic Regular Expression Characters
+
+| Basic Regex Character(s) | Meaning |
+|--------------------------|---------|
+| `.` | any one single character |
+| `[ ]` | any one specified character |
+| `[^ ]` | not the one specified character |
+| `*` | zero or more of the previous character |
+| `^` | if first character in the pattern, match must be at the beginning of the line (otherwise literal `^`) |
+| `$` | if last character in the pattern, match must be at the end of the line (otherwise literal `$`) |
+
+---
+
+## Extended Regular Expression Characters
+
+Extended regular expressions must be used with either the `egrep` command or the `-E` option with the `grep` command.
+
+| Extended Regex Character(s) | Meaning |
+|----------------------------|---------|
+| `+` | one or more of the previous pattern |
+| `?` | the preceding pattern is optional |
+| `{ }` | specify minimum, maximum, or exact matches of the previous pattern |
+| `|` | alternation (logical OR) |
+| `( )` | used to create groups |
