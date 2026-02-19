@@ -1,0 +1,37 @@
+# Shutting Down and Restarting Linux
+
+Linux provides several commands to **shutdown, reboot, or power off** the system.  
+Most commands require **administrative privileges** (`sudo`).
+
+---
+
+## Summary Table
+
+| Command | Meaning |
+|--------|---------|
+| `shutdown now` | shutdown immediately |
+| `shutdown -h now` | halt/power off immediately |
+| `shutdown -r now` | reboot immediately |
+| `poweroff` | power off the system |
+| `reboot` | reboot the system |
+| `halt` | stop all processes and halt the system |
+| `shutdown +10` | schedule shutdown in 10 minutes |
+| `shutdown -c` | cancel a scheduled shutdown |
+
+---
+
+## Example
+
+1. Shutdown immediately:
+
+```bash
+sudo shutdown now
+
+## reboot Command Summary
+
+| Command | Meaning |
+|--------|---------|
+| `sudo reboot` | immediately restart the system |
+| `sudo shutdown -r now` | immediately restart (alternative) |
+| `sudo shutdown -r +N` | schedule a reboot in N minutes |
+| `sudo shutdown -c` | cancel a scheduled reboot or shutdown |
