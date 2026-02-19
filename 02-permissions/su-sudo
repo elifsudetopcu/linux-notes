@@ -1,0 +1,30 @@
+# su Command (Switch User)
+
+`su` means **switch user**.
+
+It is used to log in as another user inside the terminal.
+
+---
+
+## Basic Usage
+
+```bash
+su username
+
+Examples:
+su user
+su or su root
+
+
+# sudo Command (Superuser Do)
+
+`sudo` allows a normal user to run commands as **root (administrator)**.
+
+It is used when you need administrative permissions.
+
+---
+
+## Basic Usage
+
+```bash
+sudo command
