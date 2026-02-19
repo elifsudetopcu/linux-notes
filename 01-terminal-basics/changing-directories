@@ -1,0 +1,34 @@
+# Changing Directories (cd) - Linux
+
+In Linux, directories are folders.  
+The `cd` command is used to **change the current working directory**.
+
+---
+
+## Check Current Directory
+
+```bash
+pwd
+
+
+## Absolute Path
+An **absolute path** starts from the **root directory `/`** and gives the full location.
+
+Example:
+```bash
+cd /home/user/Documents
+
+
+## Relative Path
+A **relative path** starts from your **current directory**.
+
+
+## Shortcuts
+| Command | Meaning |
+|--------|---------|
+| `pwd` | show current directory |
+| `cd folder` | go into folder |
+| `cd ..` | go back one directory |
+| `cd /` | go to root directory |
+| `cd ~` | go to home directory |
+| `cd -` | go to previous directory |
