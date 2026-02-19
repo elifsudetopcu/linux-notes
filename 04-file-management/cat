@@ -1,0 +1,41 @@
+# cat Command (Concatenate and Display)
+
+The `cat` command is used to **view the contents of a file**, **concatenate multiple files**, or **create new files**.
+
+---
+
+## Basic Usage
+
+```bash
+cat file.txt
+
+  
+## cat Command Summary
+
+| Command | Meaning |
+|--------|---------|
+| `cat file.txt` | display the contents of a file |
+| `cat file1.txt file2.txt` | display multiple files one after another |
+| `cat file1.txt > newfile.txt` | write/overwrite to a new file |
+| `cat file1.txt >> existingfile.txt` | append contents to an existing file |
+| `cat -n file.txt` | display file with line numbers |
+
+
+  ## cat Command Examples
+
+| Command | Description | Example Output |
+|--------|-------------|----------------|
+| `cat file.txt` | display the contents of a file | shows all lines in `file.txt` |
+| `cat file1.txt file2.txt` | display multiple files | contents of `file1.txt` followed by `file2.txt` |
+| `cat file1.txt > combined.txt` | write/overwrite to a new file | creates `combined.txt` containing both files |
+| `cat file1.txt >> existing.txt` | append contents to an existing file | adds `file1.txt` to the end of `existing.txt` |
+| `cat -n file.txt` | display file with line numbers | each line is numbered from 1 upwards |
+
+---
+
+## Example Usage
+
+Display contents of `notes.txt`:
+
+```bash
+cat notes.txt
