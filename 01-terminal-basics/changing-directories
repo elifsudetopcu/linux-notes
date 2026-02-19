@@ -32,3 +32,5 @@ A **relative path** starts from your **current directory**.
 | `cd /` | go to root directory |
 | `cd ~` | go to home directory |
 | `cd -` | go to previous directory |
+ `./` | current directory (this folder) |
+| `->` | points to the target of a symbolic link (symlink) |
