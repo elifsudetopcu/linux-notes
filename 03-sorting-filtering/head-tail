@@ -1,0 +1,17 @@
+## head / tail / -n Table
+
+| Command | Meaning |
+|--------|---------|
+| `head file.txt` | shows the first 10 lines of a file |
+| `tail file.txt` | shows the last 10 lines of a file |
+| `head -n 5 file.txt` | shows the first 5 lines |
+| `tail -n 5 file.txt` | shows the last 5 lines |
+| `-n N` | sets the number of lines to display |
+
+---
+
+## Examples
+
+Show the first 3 lines of a file:
+```bash
+head -n 3 notes.txt
