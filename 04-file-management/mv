@@ -1,0 +1,30 @@
+# mv Command (Move / Rename)
+
+`mv` is used to **move** files/directories or **rename** them.
+
+---
+
+## Rename a File
+
+```bash
+mv old.txt new.txt
+
+
+# Examples
+
+Move a File to Another Directory
+mv file.txt /home/user/Documents/
+
+Rename a Directory
+mv oldfolder newfolder
+
+
+
+| Command | Meaning |
+|--------|---------|
+| `mv old.txt new.txt` | rename a file |
+| `mv file.txt /path/` | move file to another directory |
+| `mv file1.txt file2.txt /path/` | move multiple files |
+| `mv -i file.txt /path/` | ask before overwriting |
+| `mv -v file.txt /path/` | show what is being moved |
+
