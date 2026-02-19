@@ -1,0 +1,22 @@
+# rm Command (Remove)
+
+`rm` is used to delete (remove) files and directories.
+
+⚠️ Warning: Deleted files usually cannot be recovered.
+
+---
+
+## Remove a File
+
+```bash
+rm file.txt
+
+
+| Command | Meaning |
+|--------|---------|
+| `rm file.txt` | remove (delete) a file |
+| `rm file1.txt file2.txt` | remove multiple files |
+| `rm -i file.txt` | ask before deleting |
+| `rm -r foldername` | remove directory and its contents |
+| `rm -f file.txt` | force delete (no confirmation) |
+| `rm -rf foldername` | force delete folder and everything inside (dangerous) |
