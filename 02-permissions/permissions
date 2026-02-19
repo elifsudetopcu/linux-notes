@@ -1,0 +1,31 @@
+# 02 - Permissions (Linux)https://github.com/elifsudetopcu/linux-notes/tree/main
+
+Linux permissions control who can **read**, **write**, or **execute** files and directories.
+
+---
+
+## Permission Types
+
+| Symbol | Meaning  | Number |
+|--------|----------|--------|
+| r      | read     | 4      |
+| w      | write    | 2      |
+| x      | execute  | 1      |
+
+---
+
+## Permission Groups
+
+| Symbol | Meaning |
+|--------|---------|
+| u      | user (owner) |
+| g      | group |
+| o      | others |
+| a      | all (u+g+o) |
+
+---
+
+## Checking Permissions
+
+```bash
+ls -l
