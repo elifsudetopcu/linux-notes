@@ -1,0 +1,25 @@
+# chown Command (Change Owner)
+
+`chown` is used to change the **owner** of a file or directory.
+
+---
+
+## Basic Syntax
+
+```bash
+chown user file
+
+###Examples
+
+sudo chown elif notes.txt
+  
+sudo chown user:group file
+sudo chown elif:developers script.sh
+
+sudo chown :group file
+sudo chown :developers project.txt
+
+sudo chown -R user:group foldername
+sudo chown -R elif:developers myfolder
+
+
