@@ -1,0 +1,45 @@
+# chmod Command (Change Mode)
+
+`chmod` is used to change the permissions of files and directories.
+
+Permissions control who can read, write, or execute a file.
+
+---
+
+## Permission Values
+
+| Permission | Symbol | Number |
+|-----------|--------|--------|
+| read      | `r`    | 4      |
+| write     | `w`    | 2      |
+| execute   | `x`    | 1      |
+
+---
+
+## Permission Groups
+
+| Group | Meaning |
+|------|---------|
+| `u`  | user (owner) |
+| `g`  | group |
+| `o`  | others |
+| `a`  | all |
+
+---
+
+## chmod Symbols
+
+| Symbol | Meaning |
+|--------|---------|
+| `+` | add permission |
+| `-` | remove permission |
+| `=` | set exact permission |
+
+### Examples
+
+| Command | Meaning |
+|--------|---------|
+| `chmod u+x file` | add execute permission to user |
+| `chmod g-w file` | remove write permission from group |
+| `chmod o=r file` | set others permission to read only |
+
