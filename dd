@@ -1,0 +1,27 @@
+# dd Command
+
+`dd` is used to copy and convert data at a low level.
+
+It is commonly used for:
+- creating disk images
+- copying USB drives
+- backup and restore
+- wiping disks
+
+⚠️ Warning: `dd` can destroy data if used incorrectly.
+
+---
+
+## Basic Syntax
+
+```bash
+dd if=input_file of=output_file
+
+
+| Option | Meaning |
+|--------|---------|
+| `if=` | input file |
+| `of=` | output file |
+| `bs=` | block size |
+|'count'|The number of blocks to be read from the input file.|
+| `status=progress` | show progress while copying |
