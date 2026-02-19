@@ -16,3 +16,19 @@ grep "word" file.txt
 | `grep -i "text" file.txt` | ignore case (case-insensitive) |
 | `grep -n "text" file.txt` | show line numbers |
 | `grep "text" file1 file2` | search
+
+
+## grep Examples Table
+
+| Command | Description |
+|--------|-------------|
+| `grep "^root" /etc/passwd` | matches lines that **start** with "root" |
+| `grep "bash$" /etc/passwd` | matches lines that **end** with "bash" |
+| `grep "[0-9]" file.txt` | matches lines containing **any digit** |
+| `grep "cat" file.txt` | matches lines containing the exact word "cat" |
+| `grep "a.b" file.txt` | matches "a" followed by any single character, then "b" |
+| `grep -E "ab+" file.txt` | matches "a" followed by **one or more b's** (extended regex) |
+| `grep -i "word" file.txt` | **case-insensitive** match |
+| `grep -n "word" file.txt` | show **line numbers** of matches |
+| `grep -r "word" folder/` | search **recursively** in folder |
+
