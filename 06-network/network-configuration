@@ -1,0 +1,31 @@
+# Network Configuration in Linux
+
+Linux provides several commands to **view and configure network interfaces**.
+
+- You usually need **administrative privileges** (`sudo`) to change configurations.
+- Common tasks: view IP addresses, configure interfaces, check connectivity.
+
+---
+
+## Common Commands
+
+| Command | Meaning |
+|--------|---------|
+| `ifconfig` | display or configure network interfaces (deprecated in favor of `ip`) |
+| `ip addr` | show IP addresses and network interfaces |
+| `ip link` | show network interface status |
+| `ip route` | show routing table |
+| `ping <host>` | check connectivity to a host |
+| `netstat -tuln` | show listening ports and connections |
+| `ss -tuln` | modern alternative to `netstat` |
+| `nmcli` | manage NetworkManager connections |
+| `systemctl restart network` | restart network service |
+
+---
+
+## Examples
+
+1. View all network interfaces:
+
+```bash
+ip addr
