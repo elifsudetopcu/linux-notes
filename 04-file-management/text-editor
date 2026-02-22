@@ -1,0 +1,241 @@
+# Text Editors in Linux
+
+Text editors are used to create and modify text files directly from the terminal.
+
+Linux provides several text editors. The most common ones are:
+
+- `nano` (beginner-friendly)
+- `vim` (advanced)
+- `vi` (basic version of vim)
+
+---
+
+## Nano (Beginner Friendly)
+
+Nano is simple and easy to use.
+
+### Open or Create a File
+
+```bash
+nano file.txt
+
+
+--------------------------------------------------
+
+## Vim Motion Commands
+
+In Normal Mode, Vim uses single-key commands to move around the file.
+
+| Motion | Result |
+|--------|---------|
+| `h` | Move left one character |
+| `j` | Move down one line |
+| `k` | Move up one line |
+| `l` | Move right one character |
+| `w` | Move one word forward |
+| `b` | Move one word backward |
+| `^` | Move to the beginning of the line |
+| `$` | Move to the end of the line |
+
+------------------------------------------
+
+## Vi / Vim Editing Commands
+
+| Standard | Vi | Meaning |
+|----------|----|----------|
+| cut | `d` | delete text |
+| copy | `y` | yank (copy text) |
+| paste | `p` / `P` | put (paste text) |
+
+---
+
+## Usage Examples
+
+Delete a word:
+
+```bash
+dw
+
+----------------------------------------
+
+## Vim Delete Commands
+
+In Normal Mode, the `d` command is used to delete text.
+It can be combined with motions and numbers.
+
+| Action | Result |
+|--------|--------|
+| `dd` | Delete current line |
+| `3dd` | Delete the next three lines |
+| `dw` | Delete the current word |
+| `d3w` | Delete the next three words |
+| `d4h` | Delete four characters to the left |
+
+---
+
+## How It Works
+
+The structure is:
+
+[number] + command + motion
+
+Examples:
+
+- `dd` → delete line
+- `3dd` → delete 3 lines
+- `dw` → delete word
+- `d3w` → delete 3 words
+
+You can combine `d` with any motion command.
+
+----------------------------------
+
+## Vim Change Commands
+
+In Normal Mode, the `c` command is used to change text.
+It deletes the specified text and switches to Insert Mode.
+
+| Action | Result |
+|--------|--------|
+| `cc` | Change current line |
+| `cw` | Change current word |
+| `c3w` | Change the next three words |
+| `c5h` | Change five characters to the left |
+
+---
+
+## How It Works
+
+Structure:
+
+[number] + operator + motion
+
+- `c` → change operator
+- `w`, `h`, `$`, etc. → motion
+- number → how many times
+
+Examples:
+
+- `cc` → delete entire line and enter Insert Mode  
+- `cw` → delete word and enter Insert Mode  
+- `c3w` → delete 3 words and enter Insert Mode  
+
+After using `c`, Vim automatically switches to Insert Mode.
+Press `Esc` to return to Normal Mode.
+
+--------------------------------------
+
+## Vim Yank (Copy) Commands
+
+In Normal Mode, the `y` command is used to copy (yank) text.
+
+| Action | Result |
+|--------|--------|
+| `yy` | Yank current line |
+| `3yy` | Yank the next three lines |
+| `yw` | Yank the current word |
+| `y$` | Yank to the end of the line |
+
+---
+
+## How It Works
+
+Structure:
+
+[number] + operator + motion
+
+- `y` → yank (copy)
+- `w`, `$`, `h`, etc. → motion
+- number → how many times
+
+Examples:
+
+- `yy` → copy one line  
+- `3yy` → copy 3 lines  
+- `yw` → copy one word  
+- `y$` → copy from cursor to end of line  
+
+To paste:
+- `p` → paste below / after cursor  
+- `P` → paste above / before cursor
+
+------------------------------------------------
+
+## Vim Paste Commands
+
+In Normal Mode, `p` and `P` are used to paste (put) previously yanked or deleted text.
+
+| Action | Result |
+|--------|--------|
+| `p` | Put (paste) after cursor |
+| `P` | Put (paste) before cursor |
+
+---
+
+## How It Works
+
+- `p` → paste after the cursor  
+- `P` → paste before the cursor  
+
+If you copied or deleted a **line**, it pastes as a new line.
+If you copied a **word or characters**, it pastes inline at the cursor position.
+
+-----------------------------------------------------------------------
+
+## Vim Insert Mode Commands
+
+These commands are used in Normal Mode to enter Insert Mode.
+
+| Input | Purpose |
+|-------|----------|
+| `a` | Enter insert mode right after the cursor |
+| `A` | Enter insert mode at the end of the line |
+| `i` | Enter insert mode right before the cursor |
+| `I` | Enter insert mode at the beginning of the line |
+| `o` | Enter insert mode on a blank line after the cursor |
+| `O` | Enter insert mode on a blank line before the cursor |
+
+---
+
+## Explanation
+
+- `i` → insert before cursor  
+- `a` → append (after cursor)  
+- `I` → beginning of line  
+- `A` → end of line  
+- `o` → open new line below  
+- `O` → open new line above  
+
+Press `Esc` to return to Normal Mode.
+
+----------------------------------------------------------------
+
+## Vim Command Mode Commands
+
+These commands are used in Command Mode (Last Line Mode).
+Press `:` to enter Command Mode.
+
+| Input | Purpose |
+|-------|----------|
+| `:w` | Write the current file to the filesystem |
+| `:w filename` | Save a copy of the current file as filename |
+| `:w!` | Force writing to the current file |
+| `:1` | Go to line number 1 (or any given number) |
+| `:e filename` | Open filename |
+| `:q` | Quit if no changes made to file |
+| `:q!` | Quit without saving changes |
+
+---
+
+## How It Works
+
+- `:` → enters Command Mode  
+- `:w` → save  
+- `:q` → quit  
+- `:wq` → save and quit  
+- `:q!` → force quit without saving  
+
+Press `Enter` after typing the command to execute it.
+
+------------------------------------------------------------------------
+
