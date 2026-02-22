@@ -1,0 +1,24 @@
+# Redirection in Linux
+
+Redirection allows you to control where the input and output of a command go.
+
+By default:
+- Standard output (stdout) goes to the screen.
+- Standard error (stderr) goes to the screen.
+- Standard input (stdin) comes from the keyboard.
+
+Redirection lets you change this behavior.
+
+---
+
+## Output Redirection
+
+| Symbol | Meaning |
+|--------|----------|
+| `>` | Redirect output and overwrite the file |
+| `>>` | Redirect output and append to the file |
+
+### Examples
+
+```bash
+ls > output.txt
