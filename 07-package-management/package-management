@@ -1,0 +1,39 @@
+# Package Management in Linux
+
+Package management is used to install, update, remove, and manage software on Linux systems.
+
+Different Linux distributions use different package managers.
+
+---
+
+## Common Package Managers
+
+| Distribution | Package Manager |
+|--------------|-----------------|
+| Debian / Ubuntu | `apt` |
+| Red Hat / CentOS | `yum` / `dnf` |
+| Arch Linux | `pacman` |
+
+---
+
+# APT (Debian / Ubuntu)
+
+## Common Commands
+
+| Command | Meaning |
+|----------|----------|
+| `sudo apt update` | update package list |
+| `sudo apt upgrade` | upgrade installed packages |
+| `sudo apt install package` | install a package |
+| `sudo apt remove package` | remove a package |
+| `sudo apt purge package` | remove package + configuration files |
+| `apt search package` | search for a package |
+
+---
+
+## Examples
+
+Update package list:
+
+```bash
+sudo apt update
