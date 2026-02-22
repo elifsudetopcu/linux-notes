@@ -1,0 +1,24 @@
+# Viewing Processes in Linux
+
+Processes are running programs in the system.  
+Linux provides the `ps` command to display information about active processes.
+
+---
+
+## ps vs ps -e
+
+| Command | Meaning |
+|---------|----------|
+| `ps` | shows processes running in the current terminal session only |
+| `ps -e` | shows ALL running processes in the system |
+| `ps -ef` | shows all processes in full format (detailed view) |
+| `ps aux` | shows all processes in user-oriented format (common usage) |
+
+---
+
+## Difference Between `ps` and `ps -e`
+
+### 1️⃣ `ps`
+
+```bash
+ps
